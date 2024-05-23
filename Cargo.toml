@@ -1,2 +1,8 @@
 [workspace]
 members = [ "crates/*", "lib/*" ]
+resolver = "2"
+
+[workspace.dependencies]
+tokio = {version="1.37.0", features=["full"]}
+cvtool = {path="lib/cvtool"}
+opencv = "0.91.3"
